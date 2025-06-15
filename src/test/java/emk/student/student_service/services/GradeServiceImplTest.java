@@ -60,7 +60,7 @@ class GradeServiceImplTest {
     studentRequest.setStudentId("STU001");
     studentRequest.setStudentName("John Doe");
     studentRequest.setGrade("A");
-    studentRequest.setStartDate("2024-03-20");
+    studentRequest.setSemester("1");
   }
 
   @Test

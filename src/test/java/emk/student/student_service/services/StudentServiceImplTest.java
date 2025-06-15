@@ -54,7 +54,7 @@ class StudentServiceImplTest {
     grade = new Grade();
     grade.setStatus("Current");
     grade.setGrade("1");
-    grade.setStartDate(LocalDate.parse("2022-01-01"));
+    grade.setSemester("1");
     List<Grade> grades = Arrays.asList(grade);
     student = new Student();
     student.setId(1L);

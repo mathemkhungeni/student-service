@@ -24,7 +24,7 @@ class GradeMapperTest {
     // Arrange
     GradeRequest request = new GradeRequest();
     request.setGrade("A");
-    request.setStartDate(new Date());
+    request.setSemester("1");
     request.setStatus("Current");
     request.setStudentId("STU001");
 
@@ -35,7 +35,7 @@ class GradeMapperTest {
     assertNotNull(result);
     assertEquals(request.getGrade(), result.getGrade());
     assertEquals(request.getStatus(), result.getStatus());
-    assertNotNull(result.getStartDate());
+    assertNotNull(result.getSemester());
   }
 
   @Test
@@ -62,7 +62,7 @@ class GradeMapperTest {
     assertNotNull(result);
     assertEquals(request.getGrade(), result.getGrade());
     assertEquals(request.getStatus(), result.getStatus());
-    assertNull(result.getStartDate());
+    assertNull(result.getSemester());
   }
 
   @Test
