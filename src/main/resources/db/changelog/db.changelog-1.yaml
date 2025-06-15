@@ -1,0 +1,7 @@
+databaseChangeLog:
+  - changeSet:
+      id: 1-schema
+      author: mathemkhungeni@gmail.com
+      changes:
+        - sqlFile:
+            path: db/changelog/create_students_table.sql
